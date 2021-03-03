@@ -27,6 +27,7 @@
                         {% csrf_token %}
                         <div class="field has-addons">
                             <div class="control is-expanded">
+                                
                                 {{ form.name }}
                             </div>
                             <div class="control">
@@ -65,11 +66,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="media-right">
-                                <a href="{% url 'delete_city' city_weather.city %}">
-                                    <button class="delete"></button>
-                                </a>
-                            </div>
+                          
                         </article>
                     </div>
                     {% endfor %}
